@@ -3,7 +3,7 @@ async function charLimitName() {
 
     if (name.value.length > 2) {
         try {
-            window.location.href = "signup.html"
+            window.location.href = "/signup"
             const response = await axios.post("http://localhost:3000/users", { name: name.value })
             console.log(response.data)
 
