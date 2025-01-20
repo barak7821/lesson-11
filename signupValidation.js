@@ -63,7 +63,7 @@ function clickEvent() {
         if (userName && email && password && confirmPassword) {
             
             try {
-                window.location.href = "homepage.html"
+                window.location.href = "/home"
                 
                 const response = await axios.post("http://localhost:3000/users", {
                     username: userName,
